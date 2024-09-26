@@ -1,0 +1,122 @@
+---
+title: " "
+toc: false
+sidebar: false
+anchor-sections: false
+
+
+format: 
+  html:
+    css: style.css
+    page-layout: custom
+---
+
+```{r}
+#| include: false
+library(htmltools)
+```
+<center>
+# NOS MISSIONS 
+</center>
+
+<center>
+Depuis ses débuts, les missions de l’association sont réparties parmi trois axes principaux : la **connaissance**, la **préservation** et la **valorisation**.
+<br>
+Ces 3 missions contribuent à mettre en valeur le patrimoine marin mahorais.
+</center>
+
+<br>
+
+```{r}
+#| echo: false
+
+tags$div(
+  class = "container-mission",
+  
+  tags$div(
+    class = "box-mission",
+    tags$div(
+      tags$img(src = "images/poubelles.jpg", class="mission-image", style = "height: 100%;")
+    ),
+    tags$div(
+      tags$h1(class = "box-text", "PROTÉGER")
+    )
+  ),
+  
+  tags$div(
+    class = "box-mission",
+    tags$div(
+      tags$img(src = "images/plaquette.jpg", class="mission-image", style = "height: 130%;")
+    ),
+    tags$div(
+     tags$b(tags$h1(class = "box-text", "VALORISER"))
+    )
+  )
+)
+
+tags$br()
+
+tags$div(
+  class = "container", style = "position: relative; display: block; height: auto; width: 100vw; align-items: center; margin: 0 auto; text-align: center.",
+    tags$div(
+      tags$img(src = "images/plongeur_ccr.jpg"),
+      tags$div(
+        tags$h1("CONNAITRE", style = "
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        text-align: center; 
+        color: #fff;")
+        )
+      )
+)
+
+
+```
+
+<br>
+<br>
+
+```{r}
+#| echo: false
+
+tags$div(
+  style = "height: 1000px; 
+  width: 100%; 
+  overflow: hidden;
+  position: relative;
+  background-color: #062853;
+  margin: auto;",
+  
+  tags$br(),
+  
+  tags$div(
+    style = "position: relative; display: block; height: auto; width: 70vw; align-items: center; margin: 0 auto; text-align: center.",
+    HTML("<center>"),
+    tags$h1("CONNAITRE", style = "color : #fff;"),
+    tags$br(),
+    tags$p("Nous mettons à disposition notre expertise de la plongée profondes sur plusieurs missions d'inventaire en zone mésophotique. Formé en écologie marine, nous pouvons égalment mettre en oeuvre tout type de protocole scientifique entre 0 et 150m.", style = "color : #fff;"),
+    tags$br(),
+    tags$p("Mieux connaitre les écosystèmes mésophotiques permettra de mieux comprendre leurs réponses aux activités humaines et au changement climatique.", style = "color : #fff;")
+    ),
+  
+  tags$br(),
+  tags$br(),
+  
+  tags$div(
+  class = "container", style = "position: relative; display: block; height: auto; width: 70vw; align-items: center; margin: 0 auto; text-align: center",
+    tags$div(
+      tags$img(src = "images/suivi_profond.png")
+    )
+  ),
+  
+  HTML("</center>")
+    
+)
+
+
+```
+
+<br>
+<br>

@@ -1,11 +1,9 @@
 ---
-title: "service-plongee-scientifique.github.io"
+title: ""
+format: 
+  html:
+    include-in-header: caroussel.html
+    css: styles.css
 ---
 
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
